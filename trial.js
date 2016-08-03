@@ -16,7 +16,7 @@ $thingList.on('click', 'li', function() {
 
 
 $thingList.on('dblclick', 'li', function() {
-	alert("TEST TEST TEST");
+	alert("Amilia！You will have great luck in the future!");
 })
 
 
