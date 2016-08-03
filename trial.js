@@ -1,9 +1,19 @@
+/*
+Append two anchor tags to each list item: An anchor tag to
+complete the task. An anchor tag to delete the task (list item).
+The complete task event handler should toggle a 'completed'
+class on the list item
+*/
+
+
+
+
 $(document).ready(function() {
     $("#new-thing-button").on("click",function(event) {
         event.preventDefault();
         var text = document.getElementById("new-thing").value;
         $("#fav-list").append("<li>" + text + "</li>");
-        $("li").addClass("added");
+        $("li").addClass("completed");
     });
 });
 
