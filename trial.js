@@ -7,18 +7,36 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-	$("li").on("click", function() {
-		$(this).css('background-color', 'red');
-	});
+
+
+var $thingList = $('#fav-list');
+$thingList.on('click', 'li', function() {
+	$(this).css("background-color", "red");
 });
 
 
-$(document).ready(function() {
-	$("li").on("dblclick", function() {
-		alert("TESTING DOUBLE CLICK METHOD");
-	});
-});
+$thingList.on('dblclick', 'li', function() {
+	alert("TEST TEST TEST");
+})
+
+
+
+
+
+
+// $(document).ready(function() {
+// 	$("li").on("dblclick", function() {
+// 		alert("TESTING DOUBLE CLICK METHOD");
+// 	});
+// });
+
+
+
+// $(document).ready(function() {
+// 	$("li").on("click", function() {
+// 		$(this).css('background-color', 'red');
+// 	});
+// });
 
 
 
