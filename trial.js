@@ -11,12 +11,13 @@ $(document).ready(function() {
 
 var $thingList = $('#fav-list');
 $thingList.on('click', 'li', function() {
-	$(this).css("background-color", "red");
+	$(this).css("text-decoration", "line-through");
 });
 
 
 $thingList.on('dblclick', 'li', function() {
-	alert("Amilia！You will have great luck in the future!");
+	// alert("Amilia！You will have great luck in the future!");
+	$(this).css("visibility", "hidden");
 })
 
 
